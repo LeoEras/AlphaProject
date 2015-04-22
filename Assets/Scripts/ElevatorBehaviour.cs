@@ -10,7 +10,7 @@ public class ElevatorBehaviour : MonoBehaviour {
 	// > the speed the lift will up (as a force)
 	// > the Height the Lift will up
 	// >A cooldown that only works to the player to not to move for a sec when the lift reach the top.
-	public float Speed, Height = 21f, CoolDown = 5f;
+	public float Speed, Height, CoolDown = 5f;
 	//there's no reason to make this vector 3 public.
 	private Vector3 Vect, FinalPos;
 	//Rigibody to use some methods for the lift and for the player.
@@ -59,7 +59,7 @@ public class ElevatorBehaviour : MonoBehaviour {
 		ElevatorMovement ();
 		//This line will draw just to let know where the top is.
 		Vect = transform.position;
-		Vect.y = FinalPos.y + Height;
+		Vect.y = Height;
 		Debug.DrawLine (transform.position, Vect, Color.blue);
 
 	}
