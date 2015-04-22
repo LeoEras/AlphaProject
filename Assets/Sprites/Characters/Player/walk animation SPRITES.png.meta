@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: f3b651177642f254a85367ef49e237b6
+timeCreated: 1429114555
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walk animation SPRITES_1
+    21300002: walk animation SPRITES_2
+    21300004: walk animation SPRITES_3
+    21300006: walk animation SPRITES_5
+    21300008: walk animation SPRITES_6
+    21300010: walk animation SPRITES_7
+    21300012: walk animation SPRITES_8
+    21300014: walk animation SPRITES_9
+    21300016: walk animation SPRITES_10
+    21300018: walk animation SPRITES_11
+    21300020: walk animation SPRITES_12
+    21300022: walk animation SPRITES_13
+    21300024: walk animation SPRITES_0
+    21300026: walk animation SPRITES_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walk animation SPRITES_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 601
+        width: 246
+        height: 390
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_2
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 600
+        width: 272
+        height: 393
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_3
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 605
+        width: 240
+        height: 388
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_5
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 602
+        width: 188
+        height: 392
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 115
+        width: 147
+        height: 391
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 116
+        width: 184
+        height: 385
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_8
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 134
+        width: 224
+        height: 369
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_9
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 147
+        width: 217
+        height: 356
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_10
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 146
+        width: 181
+        height: 358
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_11
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 146
+        width: 160
+        height: 359
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_12
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 143
+        width: 150
+        height: 362
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_13
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 308
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 605
+        width: 212
+        height: 390
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk animation SPRITES_4
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 603
+        width: 206
+        height: 390
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
