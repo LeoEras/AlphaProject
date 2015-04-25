@@ -8,8 +8,6 @@ public class Teleporter : MonoBehaviour {
 	public int teleportEnablerTimer;
 	[Tooltip("The teleporter state. True for enabled, false for disabled")]
 	public bool state;
-	[Tooltip("The radius the teleporter uses")]
-	public float rad;
 	//Checks whether the user is fixed to the teleporter.transform.position
 	private bool fixedPos;
 	//Gets who is getting in the teleporter
@@ -22,7 +20,6 @@ public class Teleporter : MonoBehaviour {
 	void Start () {
 		Physics2D.IgnoreLayerCollision(0 , 9);
 		Physics2D.IgnoreLayerCollision(0 , 8);
-		GetComponent<CircleCollider2D>().radius = rad;
 		if(teleportEnablerTimer == 0)
 			teleportEnablerTimer = 3;
 	}
