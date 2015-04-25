@@ -12,7 +12,7 @@ public class Attributes : MonoBehaviour {
 	public Transform gndColl;
 	public GameObject player;
 	public static bool grounded;
-	public enum States{Main, Soul, Electro, Stun};
+	public enum States{Main, Soul, Electro, Stun, Death};
 	public static int state = 0;
 	public static Animator anim;
 	public static float Restoration = 0.0005f;

@@ -1,13 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScripts\HealthBar.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CheckPoint.cs">
     <Files>
-      <File FileName="..\..\..\Documents\XouProjectEntrenamiento\Assets\Scripts\Things Behaviour\ElevatorBehaviour.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\Documents\XouProjectEntrenamiento\Assets\Scripts\Things Behaviour\SwitchTurn.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\Documents\XouProjectEntrenamiento\Assets\Scripts\Elekid\ElektroChange.cs" Line="3" Column="1" />
-      <File FileName="..\..\..\Documents\XouProjectEntrenamiento\Assets\Scripts\Elekid\ElektroMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerScripts\Attributes.cs" Line="18" Column="42" />
-      <File FileName="Assets\Scripts\PlayerScripts\HealthBar.cs" Line="46" Column="45" />
+      <File FileName="Assets\Scripts\CheckPoint.cs" Line="49" Column="38" />
+      <File FileName="Assets\Scripts\PlayerScripts\Attributes.cs" Line="18" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
