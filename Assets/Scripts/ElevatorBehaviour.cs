@@ -12,7 +12,7 @@ public class ElevatorBehaviour : MonoBehaviour {
 	// >A cooldown that only works to the player to not to move for a sec when the lift reach the top.
 	public float Speed, Height, CoolDown = 5f;
 	//there's no reason to make this vector 3 public.
-	private Vector3 Vect, FinalPos;
+	private Vector3 Vect, Posi, Prueba;
 	//Rigibody to use some methods for the lift and for the player.
 	public Rigidbody2D Lift, PlayerBody;
 	//This forces "ignores" other forces. At least gravity.
@@ -21,17 +21,32 @@ public class ElevatorBehaviour : MonoBehaviour {
 	void OnCollisionStay2D(Collision2D Coll)
 	{
 		//technically this 'if' means if the user is almost at the middle of the Lift, the lift can move and is touching the lift.
-		if (Turner.GetStatus() && Coll.collider.name.Equals ("Player") && ((int)Player.position.x == (int)Vect.x)) {
-			//If that happends, the player won't move until reach the max. Height. that's the "stun" state of the player.
-			Attributes.state = (int)Attributes.States.Stun;
-			//As I said, the Lift will have a contant force, so will ignore gravity when is going up.
-			ConstantLift.force = Vector2.up * Speed;
-			Lift.isKinematic = false;
+		if (Turner.GetStatus() && Coll.collider.name.Equals ("Player")) {
+
+			if(CoolDown == 5)
+			{
+
+				if(Player.position.x - transform.position.x > 0)
+					Player.eulerAngles = new Vector2 (0, 180);
+				else
+					Player.eulerAngles = new Vector2 (0, 0);
+
+				Player.position = Vector3.MoveTowards(Player.position, Posi, Attributes.speed/150);
+			}
+			if ( (float) Player.position.x == Vect.x)
+			{
+				CoolDown = 2;
+				//If that happends, the player won't move until reach the max. Height. that's the "stun" state of the player.
+				Attributes.state = (int)Attributes.States.Stun;
+				//As I said, the Lift will have a contant force, so will ignore gravity when is going up.
+				ConstantLift.force = Vector2.up * Speed;
+				Lift.isKinematic = false;
+			}
 		}
 		//So finally reach the top!... this what happend...
 		if ((int)transform.position.y >= (int)Vect.y)
 		{
-			//The player may move again... just if the want to :D
+			//The player may move again... just if he want to :D
 			Attributes.state = (int)Attributes.States.Main;
 			if(CoolDown >= 0)
 			{
@@ -49,7 +64,7 @@ public class ElevatorBehaviour : MonoBehaviour {
 	void Start()
 	{
 		//Have to change this to make the vector more... dinamyc.
-		FinalPos = transform.position;
+		Posi = transform.position;
 		Lift.isKinematic = true;
 	}
 
@@ -57,6 +72,7 @@ public class ElevatorBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		ElevatorMovement ();
+		Posi.y = Player.position.y;
 		//This line will draw just to let know where the top is.
 		Vect = transform.position;
 		Vect.y = Height;
