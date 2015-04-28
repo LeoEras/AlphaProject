@@ -24,7 +24,10 @@ public class LocoMotion: MonoBehaviour {
 	{
 		//Movement direction controller
 		moveDir = Input.GetAxisRaw ("Horizontal");
-		Attributes.anim.SetInteger("moveControl", (int)moveDir);
+		if(Attributes.grounded && moveDir != 0)
+			Attributes.anim.SetBool("Moving", true);
+		else 
+			Attributes.anim.SetBool("Moving", false);
 		GetComponent<Rigidbody2D>().position = new Vector2(GetComponent<Rigidbody2D>().position.x +
 		                                                   moveDir * Time.deltaTime * Attributes.speed, 
 		                                                   GetComponent<Rigidbody2D>().position.y);

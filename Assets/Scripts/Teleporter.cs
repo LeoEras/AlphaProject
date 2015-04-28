@@ -35,6 +35,17 @@ public class Teleporter : MonoBehaviour {
 				user = null;
 			}
 		}
+		
+//		if(!state && user != null){
+//			if(user.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SphereState")){
+//				Debug.Log(user.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0));
+//			} else {
+//				user.GetComponent<Animator>().SetBool("TeleportEnter", true);
+//				user.GetComponent<Animator>().SetBool("Sphere", true);
+//			}
+//			
+//		}
+			
 		StartCoroutine("TeleporterState");
 	}
 	
@@ -44,18 +55,31 @@ public class Teleporter : MonoBehaviour {
 	
 	void OnTriggerStay2D(Collider2D coll){
 		if(state)
-		{
+		{	
 			vec = transform.position - user.transform.position;
 			if(nextNode == null)
-				user.GetComponent<Rigidbody2D>().velocity = vec * 0.5f;	
+			{
+				user.GetComponent<Animator>().SetBool("Sphere", false);
+				user.GetComponent<Animator>().SetBool("TeleportEnter", false);
+				user.GetComponent<Rigidbody2D>().velocity = vec * 0.5f;
+			}
 			else
-				user.GetComponent<Rigidbody2D>().velocity = vec * 5f;		
+			{
+				user.GetComponent<Animator>().SetBool("TeleportEnter", true);
+				user.GetComponent<Animator>().SetBool("Sphere", true);
+				user.GetComponent<Rigidbody2D>().velocity = vec * 5f;	
+			}
 			if(vec.magnitude < 0.25f)
 			{
 				fixedPos = true;
 				user.transform.position = transform.position;
 			}
-		}		
+		}
+		else 
+		{
+			user.GetComponent<Animator>().SetBool("Sphere", false);
+			user.GetComponent<Animator>().SetBool("TeleportEnter", false);
+		}
 	}
 	
 	void OnTriggerExit2D(Collider2D coll){
