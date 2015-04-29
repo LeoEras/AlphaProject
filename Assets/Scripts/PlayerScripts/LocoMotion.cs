@@ -30,7 +30,8 @@ public class LocoMotion: MonoBehaviour {
 			Attributes.anim.SetBool("Moving", false);
 		GetComponent<Rigidbody2D>().position = new Vector2(GetComponent<Rigidbody2D>().position.x +
 		                                                   moveDir * Time.deltaTime * Attributes.speed, 
-		                                                   GetComponent<Rigidbody2D>().position.y);
+		                                                   GetComponent<Rigidbody2D>().position.y);                                              
+			                                                 
 		//Facing angle controller
 		if (moveDir > 0)
 			transform.eulerAngles = new Vector2 (0, 0);
